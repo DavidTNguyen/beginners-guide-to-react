@@ -4,7 +4,18 @@
   <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
   <script type="text/babel">
+    // // This is what we did before. 
+    // It's fine, but not very ergonomic, and not how a typical React App created.
+    // This is where JSX come into the picture.
+  	// const rootElement = document.getElementById('root')
+		// const element = React.createElement('div', {
+		//   className: 'container',
+		//   children: 'Hello World',
+		// })
     const rootElement = document.getElementById('root')
+    // The following line would break the app if we don't include Babel
+    // Babel allows React understand JSX.
+    // Try Babel with the following line
     const element = <div className="container">Hello World</div>
     ReactDOM.render(element, rootElement)
   </script>
